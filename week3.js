@@ -175,6 +175,53 @@ function willBuyDrink(a, b){
 
 console.log(willBuyDrink(isHotOutside, moneyInPocket));
 
+//Step 13 Create a function of your own that solves a problem. 
+// In comments, write what the function does and why you created it
+
+
+let stocks = ['GME', 30, 'TSLA', 35, 'AMD', 45, 'AMZN', 47, 'GOOGL', 50];
+
+function buyStock(array){
+	
+	for (let i = 1; i < array.length; i += 2){
+		if(array[i] > 40){
+			console.log(array[i-1]);
+		}
+	} 
+}
+buyStock(stocks);
+
+// The stocks array listed above represents a stock and the number after the stock ticker (string)
+// represents the percent that the price of the stock is off of its 
+// high(which is where investors look for "good buys"). This function
+// will take the array and will print the stocks that are greater than 40% off their highs
+// by looping every other element from position 1 and then if that number is greater than 40 
+// it will print the previous element which represents the ticker that should be bought. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
