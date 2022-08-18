@@ -27,7 +27,6 @@ let average = sum / ages.length
 console.log(average);
 
 
-
 //Step 2 <---Create an array called names that contains the following values:
 // ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.--->
 
@@ -45,9 +44,17 @@ console.log(avrg)
 
 //Step 2b <--- Use a loop to iterate through the array again and concatenate all
 //the names together, separated by spaces, and print the result to the console --->
+let newNames = '';
 
-let joinedName = names.join(' ');
-console.log(joinedName);
+for (let i = 0; i < names.length; i++) {
+    newNames = newNames.concat(names[i]);
+	if (i < names.length-1){
+		newNames = newNames.concat(' ')
+	}
+}
+
+console.log(newNames);
+
 
 //Step 3 <--- How do you access the last element of any array? --->
 
